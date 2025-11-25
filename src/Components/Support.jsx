@@ -4,7 +4,6 @@ import { Phone, ArrowRight, Globe, Cpu } from "lucide-react";
 const Support = () => {
   return (
     <div id="support" className="w-full my-24 font-poppins relative">
-      {/* Background overlay */}
       <div className="w-full h-[600px] bg-gray-900/90 absolute top-0 left-0">
         <img
           className="w-full h-full object-cover mix-blend-overlay"
@@ -13,9 +12,7 @@ const Support = () => {
         />
       </div>
 
-      {/* Content */}
       <div className="max-w-[1240px] mx-auto text-white relative">
-        {/* Header text */}
         <div className="px-4 py-12 text-center">
           <h2 className="pt-8 text-slate-300 uppercase">Support</h2>
           <h3 className="text-5xl font-bold py-6">Finding the right team.</h3>
@@ -25,9 +22,8 @@ const Support = () => {
           </p>
         </div>
 
-        {/* Cards Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 relative gap-x-8 gap-y-16 px-4 pt-12 sm:pt-20 text-black">
-          {/* Card 1 */}
+        
           <div className="rounded-xl shadow-xl bg-white">
             <div className="p-8">
               <Phone className="text-white bg-blue-900 w-16 h-12 p-2 rounded-lg mt-[-4rem]" />
@@ -43,7 +39,6 @@ const Support = () => {
             </div>
           </div>
 
-          {/* Card 2 */}
           <div className="rounded-xl shadow-xl bg-white">
             <div className="p-8">
               <Globe className="text-white bg-blue-900 w-16 h-12 p-2 rounded-lg mt-[-4rem]" />
@@ -61,7 +56,6 @@ const Support = () => {
             </div>
           </div>
 
-          {/* Card 3 */}
           <div className="rounded-xl shadow-xl bg-white">
             <div className="p-8">
               <Cpu className="text-white bg-blue-900 w-16 h-12 p-2 rounded-lg mt-[-4rem]" />
