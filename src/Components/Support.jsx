@@ -64,7 +64,7 @@ const Support = () => {
               </h3>
               <p className="text-gray-600 text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                eiusmod tempor incididunt ut labore..
               </p>
             </div>
 
