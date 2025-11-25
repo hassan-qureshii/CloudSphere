@@ -1,16 +1,16 @@
-import { useState } from "react"
-import { Cloud, Menu, X } from "lucide-react"  
+import { useState } from "react";
+import { Cloud, Menu, X } from "lucide-react";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false)
+  const [nav, setNav] = useState(false);
 
   const handleNav = () => {
-    setNav(!nav)
-  }
+    setNav(!nav);
+  };
 
   return (
-    <div className="w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg font-poppins mb-10">
+    <div className="w-screen h-[40px] md:h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg font-poppins mb-10">
       <div className="flex justify-between items-center px-2 w-full h-full">
         {/* Logo */}
         <div className="flex items-center">
@@ -18,37 +18,32 @@ const Navbar = () => {
             <Cloud className="h-10 w-10 text-blue-900 font-extrabold" />
             Cloud
           </span>
+        </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex px-20">
           <ul className="flex gap-x-10">
-          <Link to='home'  smooth={true}    duration={700}>
-            <li className="font-bold text-[12px] cursor-pointer">Home</li>
-          </Link>
-
-          <Link to='about'  smooth={true}    duration={700}>
-            <li className="font-bold text-[12px] cursor-pointer">About</li>
-          </Link>
-
-          <Link to='support'  smooth={true}    duration={700}>
-            <li className="font-bold text-[12px] cursor-pointer">Support</li>
-          </Link>
-
-          <Link to='platforms'  smooth={true}    duration={700}>
-            <li className="font-bold text-[12px] cursor-pointer">Platforms</li>
-          </Link>
-
-          <Link to='pricing'  smooth={true}    duration={700}>
-            <li className="font-bold text-[12px] cursor-pointer">Pricing</li>
-          </Link>
-
-        </ul>
-      </div>
-    </div>
+            <Link to="home" smooth={true} duration={700}>
+              <li className="font-bold text-[12px] cursor-pointer">Home</li>
+            </Link>
+            <Link to="about" smooth={true} duration={700}>
+              <li className="font-bold text-[12px] cursor-pointer">About</li>
+            </Link>
+            <Link to="support" smooth={true} duration={700}>
+              <li className="font-bold text-[12px] cursor-pointer">Support</li>
+            </Link>
+            <Link to="platforms" smooth={true} duration={700}>
+              <li className="font-bold text-[12px] cursor-pointer">Platforms</li>
+            </Link>
+            <Link to="pricing" smooth={true} duration={700}>
+              <li className="font-bold text-[12px] cursor-pointer">Pricing</li>
+            </Link>
+          </ul>
+        </div>
 
         {/* Desktop Buttons */}
         <div className="hidden md:flex">
-          <button className="bg-transparent rounded-[4px] py-2 px-5 mx-1 text-blue-900  hover:bg-amber-400 duration-700 ease-in-out font-bold text-[14px] cursor-pointer">
+          <button className="bg-transparent rounded-[4px] py-2 px-5 mx-1 text-blue-900 hover:bg-amber-400 duration-700 ease-in-out font-bold text-[14px] cursor-pointer">
             Sign In
           </button>
           <button className="bg-blue-900 rounded-[4px] py-2 px-5 mx-4 text-amber-50 cursor-pointer">
@@ -83,7 +78,7 @@ const Navbar = () => {
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
